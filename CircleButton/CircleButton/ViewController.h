@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class RotateImageView;
 @interface ViewController : UIViewController
-
+{
+    RotateImageView * rtImageView;
+    UILabel* numberLabel;
+}
 @end

@@ -22,6 +22,11 @@
 		B1CDB06C1922303900C8F1C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CDB04B1922303900C8F1C5 /* UIKit.framework */; };
 		B1CDB0741922303900C8F1C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1CDB0721922303900C8F1C5 /* InfoPlist.strings */; };
 		B1CDB0761922303900C8F1C5 /* CircleButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CDB0751922303900C8F1C5 /* CircleButtonTests.m */; };
+		B1CDB0821922322500C8F1C5 /* MathsFun.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CDB0811922322500C8F1C5 /* MathsFun.m */; };
+		B1CDB0961922327000C8F1C5 /* RotateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CDB0931922327000C8F1C5 /* RotateImageView.m */; };
+		B1CDB09A1922334E00C8F1C5 /* CircleButtonSkinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CDB0991922334E00C8F1C5 /* CircleButtonSkinView.m */; };
+		B1CDB09D1922370300C8F1C5 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDB09B1922370300C8F1C5 /* back@2x.png */; };
+		B1CDB09E1922370300C8F1C5 /* skin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDB09C1922370300C8F1C5 /* skin@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		B1CDB0711922303900C8F1C5 /* CircleButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CircleButtonTests-Info.plist"; sourceTree = "<group>"; };
 		B1CDB0731922303900C8F1C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1CDB0751922303900C8F1C5 /* CircleButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleButtonTests.m; sourceTree = "<group>"; };
+		B1CDB0801922322500C8F1C5 /* MathsFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathsFun.h; sourceTree = "<group>"; };
+		B1CDB0811922322500C8F1C5 /* MathsFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathsFun.m; sourceTree = "<group>"; };
+		B1CDB0921922327000C8F1C5 /* RotateImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateImageView.h; sourceTree = "<group>"; };
+		B1CDB0931922327000C8F1C5 /* RotateImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateImageView.m; sourceTree = "<group>"; };
+		B1CDB0981922334E00C8F1C5 /* CircleButtonSkinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButtonSkinView.h; sourceTree = "<group>"; };
+		B1CDB0991922334E00C8F1C5 /* CircleButtonSkinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButtonSkinView.m; sourceTree = "<group>"; };
+		B1CDB09B1922370300C8F1C5 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "images/back@2x.png"; sourceTree = "<group>"; };
+		B1CDB09C1922370300C8F1C5 /* skin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skin@2x.png"; path = "images/skin@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +127,9 @@
 		B1CDB04D1922303900C8F1C5 /* CircleButton */ = {
 			isa = PBXGroup;
 			children = (
+				B1CDB0911922327000C8F1C5 /* UIControls */,
+				B1CDB0801922322500C8F1C5 /* MathsFun.h */,
+				B1CDB0811922322500C8F1C5 /* MathsFun.m */,
 				B1CDB0561922303900C8F1C5 /* AppDelegate.h */,
 				B1CDB0571922303900C8F1C5 /* AppDelegate.m */,
 				B1CDB0591922303900C8F1C5 /* Main_iPhone.storyboard */,
@@ -129,6 +145,8 @@
 		B1CDB04E1922303900C8F1C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1CDB09B1922370300C8F1C5 /* back@2x.png */,
+				B1CDB09C1922370300C8F1C5 /* skin@2x.png */,
 				B1CDB04F1922303900C8F1C5 /* CircleButton-Info.plist */,
 				B1CDB0501922303900C8F1C5 /* InfoPlist.strings */,
 				B1CDB0531922303900C8F1C5 /* main.m */,
@@ -153,6 +171,17 @@
 				B1CDB0721922303900C8F1C5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1CDB0911922327000C8F1C5 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				B1CDB0981922334E00C8F1C5 /* CircleButtonSkinView.h */,
+				B1CDB0991922334E00C8F1C5 /* CircleButtonSkinView.m */,
+				B1CDB0921922327000C8F1C5 /* RotateImageView.h */,
+				B1CDB0931922327000C8F1C5 /* RotateImageView.m */,
+			);
+			path = UIControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CDB05E1922303900C8F1C5 /* Main_iPad.storyboard in Resources */,
+				B1CDB09E1922370300C8F1C5 /* skin@2x.png in Resources */,
 				B1CDB0631922303900C8F1C5 /* Images.xcassets in Resources */,
+				B1CDB09D1922370300C8F1C5 /* back@2x.png in Resources */,
 				B1CDB05B1922303900C8F1C5 /* Main_iPhone.storyboard in Resources */,
 				B1CDB0521922303900C8F1C5 /* InfoPlist.strings in Resources */,
 			);
@@ -253,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CDB0961922327000C8F1C5 /* RotateImageView.m in Sources */,
+				B1CDB09A1922334E00C8F1C5 /* CircleButtonSkinView.m in Sources */,
 				B1CDB0611922303900C8F1C5 /* ViewController.m in Sources */,
 				B1CDB0581922303900C8F1C5 /* AppDelegate.m in Sources */,
 				B1CDB0541922303900C8F1C5 /* main.m in Sources */,
+				B1CDB0821922322500C8F1C5 /* MathsFun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
